@@ -17,6 +17,7 @@ function App() {
         <div>
           <h1 id="title" className='text-center my-3'>Proyecto Galería</h1>
         </div>
+        <div id='main-img-container' className='container'>
         <Routes>
           <Route path="/Zodiacal1" element={<Zodiacal1 className='image-size'/>} />
           <Route path="/Zodiacal2" element={<Zodiacal2 className='image-size'/>} />
@@ -25,7 +26,10 @@ function App() {
           <Route path="/Zodiacal5" element={<Zodiacal5 className='image-size'/>} />
           <Route path="/Zodiacal6" element={<Zodiacal6 className='image-size'/>} />
         </Routes>
+        </div>
+        <div className='container'>
         <Navigation/>
+        </div>
       </BrowserRouter>
     </>
   )
